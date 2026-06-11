@@ -19,9 +19,9 @@ ${this.BOTNAME}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ T I K T O K  D L ]
 > ========================
-> * Title  * ${datas.title}
-> * Author * ${datas.author}
-> * URL    * ${q}
+> * Title* ${datas.title}
+> * Author* ${datas.author}
+> * URL* ${q}
 > ========================`.trim();
   },
   FACEBOOK: function (title,pushname, q) {
@@ -36,7 +36,7 @@ ${this.BOTNAME}
   },
   TWITTER: function (videoDescription, videoTitle, pushname, config) {
     return `
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ T W I T T E R  D L ]
 > =======================
@@ -80,7 +80,7 @@ ${this.BOTNAME}
   },
   SPOTIFY: function(pushname,item,config) {
     return `
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ S P O T I F Y  D L ]
 > =====================
@@ -95,7 +95,7 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘
   BOTNAME: "> [⚡ 𝗫Ｐ𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]",
   BASEMSG: function (pushname, config) {
     return `
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > ==========================`.trim();
   },
@@ -112,10 +112,10 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥𝗢𝗩𝗘𝗥𝗖𝗘 
   NSFWMENU: "*𝗡𝗦𝗙𝗪 𝗠𝗘𝗡𝗨*",
   IMG: "https://i.ibb.co/MDwfZhF0/Untitled-1.jpg",
   ALIVEVOICE: "./src/media/Auto_voice/alive.aac",
-  MOVIETITLE: "> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*",
+  MOVIETITLE: "> *『⚡ SAHAN-MD 𝑪𝑰𝑵𝑬𝑴𝑨 』*",
   ALIVEMSG: function (config, pushname, runtime) {
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ *SAHAN-MD* ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [  A  L  I  V  E  ]
 > =======================
@@ -148,48 +148,48 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥𝗢𝗩𝗘𝗥𝗖𝗘 
   },
   NO_WATERMARK: function (config) {
     return `> *NO-WATERMARK*
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`.trim();
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`.trim();
   },
   WITH_WATERMARK: function (config) {
     return `> *WITH-WATERMARK*
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`.trim();
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`.trim();
   },
   DOWNLOAD_CAPTION: function (type, config) {
     return `> *${type}*
-${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`.trim();
+${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`.trim();
   },
   POWERED_BY: function (config, suffix = "") {
-    return `> *⚖️ Powered By - : ©${this.BOTNAME || config.BOTNAME || "[⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}${suffix}*`;
+    return `> *⚖️ Powered By - : ©${this.BOTNAME || config.BOTNAME || "[⚡ *SAHAN-MD* ⚡]"}${suffix}*`;
   },
   SIGNATURE: function (config) {
-    return `${this.BOTNAME || config.BOTNAME || "© 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡"}`;
+    return `${this.BOTNAME || config.BOTNAME || "© *SAHAN-MD* ⚡"}`;
   },
   IMAGE_SEARCH_RESULT: function (imageUrl, index, pushname, config) {
-    return `> *Image ${index + 1} from your search!* 🌟\n> *Link:* ${imageUrl}\n${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`;
+    return `> *Image ${index + 1} from your search!* 🌟\n> *Link:* ${imageUrl}\n${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`;
   },
   BING_IMAGE_RESULT: function (query, selectedImage, index, pushname, config) {
-    return `> *IMAGE ${index + 1} FROM YOUR SEARCH*\n\n> *Query:* ${query}\n> *Image Link:* ${selectedImage}\n${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`;
+    return `> *IMAGE ${index + 1} FROM YOUR SEARCH*\n\n> *Query:* ${query}\n> *Image Link:* ${selectedImage}\n${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`;
   },
   PINTEREST_IMAGE_RESULT: function (query, config) {
-    return `> *Pinterest Search Result* 🌟\n> *Query*: ${query}\n> *Source*: Pinterest\n${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`;
+    return `> *Pinterest Search Result* 🌟\n> *Query*: ${query}\n> *Source*: Pinterest\n${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`;
   },
   WALLPAPER_IMAGE_RESULT: function (query, title, config) {
-    return `> *Wallpaper Search Result* 🌟\n> *Query*: ${query}\n> *Title*: ${title}\n${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}`;
+    return `> *Wallpaper Search Result* 🌟\n> *Query*: ${query}\n> *Title*: ${title}\n${this.BOTNAME || config.BOTNAME || "> [⚡ *SAHAN-MD* ⚡]"}`;
   },
   PASSWORD_MESSAGE: function (password, config) {
-    return `Please find your generated password below:\n> ${this.BOTNAME || config.BOTNAME || "⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡"}\n${password}`;
+    return `Please find your generated password below:\n> ${this.BOTNAME || config.BOTNAME || "⚡ *SAHAN-MD* ⚡"}\n${password}`;
   },
   REMOVE_BG_CAPTION: function (config) {
-    return `✨ *SCREEN SHOT GET SUCCESFULY!* ✨\n\n> *⚡ Powered by - ©${this.BOTNAME || config.BOTNAME || "[⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"} 💚*`;
+    return `✨ *SCREEN SHOT GET SUCCESFULY!* ✨\n\n> *⚡ Powered by - ©${this.BOTNAME || config.BOTNAME || "[⚡ *SAHAN-MD* ⚡]"} 💚*`;
   },
   FANCY_HEADER: function (config) {
-    return `Fancy Text Styles\n\nBY © ${this.BOTNAME || config.BOTNAME || "[⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}\nExample: .fancy 32\n\n`;
+    return `Fancy Text Styles\n\nBY © ${this.BOTNAME || config.BOTNAME || "[⚡ *SAHAN-MD* ⚡]"}\nExample: .fancy 32\n\n`;
   },
   HIJACT_STATUS: function (config) {
-    return `> GROUP HIJACT COMPLETE BY ${this.BOTNAME || config.BOTNAME || "[⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}☣`;
+    return `> GROUP HIJACT COMPLETE BY ${this.BOTNAME || config.BOTNAME || "[⚡ *SAHAN-MD* ⚡]"}☣`;
   },
   GROUP_SIGNATURE: function (config) {
-    return `\n\n${this.BOTNAME || config.BOTNAME || "© 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡"}`;
+    return `\n\n${this.BOTNAME || config.BOTNAME || "© *SAHAN-MD* ⚡"}`;
   },  //====================movie======================================
   GROUP: function (groupName, config,oce) {
     return `
@@ -198,7 +198,7 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘
   },
   SINHALASUB: function (movieData,oce) {
     return `
-> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*
+> *『⚡ SAHAN-MD 𝑪𝑰𝑵𝑬𝑴𝑨 』*
 > =====================
 > 🎬 *Title:* ${oce}${movieData.title}${oce}
 > 📝 *Tagline:* ${oce}${movieData.metadata.tagline || "N/A"}${oce}
@@ -216,7 +216,7 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘
   },
   CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
+> *『⚡ SAHAN-MD 𝑪𝑰𝑵𝑬𝑴𝑨 』*
 > =====================
 > 🎬 *Title:* ${oce}${title}${oce}
 > 📝 *Tagline:* ${oce}${tagline || "N/A"}${oce}
@@ -234,7 +234,7 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘
   },
   CINETVSHOW: function (episodeInfo,quality,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
+> *『⚡ SAHAN-MD 𝑪𝑰𝑵𝑬𝑴𝑨 』*
 > =====================
 > 📺 *Series:* ${oce}${episodeInfo.series || "N/A"}${oce}
 > 🎬 *Episode:* ${oce}${episodeInfo.seasonEpisode || "N/A"}${oce}
@@ -248,7 +248,7 @@ ${this.BOTNAME || config.BOTNAME || "> [⚡ 𝗫𝗣𝗥𝗢𝗩𝗘𝗥𝗖𝗘
   },
   CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
+> *『⚡ SAHAN-MD 𝑪𝑰𝑵𝑬𝑴𝑨 』*
 > =====================
 > 🎬 *Series:* ${oce}${seriesTitle}${oce}
 > ⭐ *IMDb:* ${oce}${rating}${oce}
@@ -427,7 +427,7 @@ ${this.BOTNAME}
   },
   VIDEO: function (data,pushname,oce) {
     return  `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ *SAHAN-MD* ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > ==========================
 > ${oce}[  Y O U T U B E    D  L  ]${oce}
